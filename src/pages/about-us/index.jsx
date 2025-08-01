@@ -1,153 +1,179 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
-import ExpandableSection from './components/ExpandableSection';
-import BreadcrumbNavigation from './components/BreadcrumbNavigation';
 
 const AboutUs = () => {
-  const aboutSections = [
-    {
-      id: 1,
-      title: "Government College of Engineering, Tirunelveli",
-      subtitle: "Host Institution - Department of Textile Technology",
-      content: `Government College of Engineering, Tirunelveli (GCET) is a premier technical institution established in 1981 under the Government of Tamil Nadu. The college is affiliated to Anna University, Chennai and approved by AICTE, New Delhi.
-
-The Department of Textile Technology at GCET was established in 1985 and has been at the forefront of textile education and research in South India. The department offers undergraduate and postgraduate programs in Textile Technology with specializations in technical textiles and industrial applications.
-
-Our faculty members are actively involved in research areas including smart textiles, composite materials, nonwoven technology, and sustainable textile processing. The department has state-of-the-art laboratories and pilot plant facilities for textile testing and product development.
-
-The department has collaborated with various national and international institutions for research projects and student exchange programs, making it an ideal host for INDUTECH 2025.`
-    },
-    {
-      id: 2,
-      title: "Anna University, Chennai",
-      subtitle: "Academic Partner - Centre for Excellence in Technical Textiles",
-      content: `Anna University, Chennai is a state university located in Tamil Nadu, India. It was formed on 4 September 1978 and is named after C. N. Annadurai, former Chief Minister of Tamil Nadu.
-
-The Centre for Excellence in Technical Textiles at Anna University is a specialized research center focusing on advanced textile materials and applications. The center conducts cutting-edge research in areas such as medical textiles, geotextiles, protective textiles, and automotive textiles.
-
-The center has established strong industry partnerships and has been instrumental in developing innovative textile solutions for various industrial applications. Their research contributions in the field of technical textiles have been recognized nationally and internationally.
-
-Anna University's involvement in INDUTECH 2025 brings academic excellence and research expertise to the conference, ensuring high-quality technical sessions and knowledge dissemination.`
-    },
-    {
-      id: 3,
-      title: "Indian Institute of Technology, Delhi",
-      subtitle: "Research Collaborator - Department of Textile and Fibre Engineering",
-      content: `The Indian Institute of Technology Delhi is one of the premier engineering institutions in India, established in 1961. IIT Delhi has been consistently ranked among the top engineering colleges in India and has a strong international reputation.
-
-The Department of Textile and Fibre Engineering at IIT Delhi is renowned for its research in advanced materials, fiber science, and textile engineering. The department focuses on interdisciplinary research combining materials science, mechanical engineering, and chemical engineering principles.
-
-Key research areas include nanofibers, smart textiles, biomaterials, composite reinforcements, and sustainable textile technologies. The department has numerous patents and publications in high-impact journals.
-
-IIT Delhi's participation in INDUTECH 2025 as a research collaborator ensures the conference maintains the highest academic standards and showcases cutting-edge research in industrial textiles.`
-    },
-    {
-      id: 4,
-      title: "Ministry of Textiles, Government of India",
-      subtitle: "Government Partner - Technical Textiles Mission",
-      content: `The Ministry of Textiles, Government of India is the nodal ministry for the development of the textile sector in the country. The ministry formulates policies and implements various schemes for the growth and development of the textile industry.
-
-The Technical Textiles Mission launched by the Ministry aims to position India as a global leader in technical textiles with a focus on domestic manufacturing and exports. The mission provides support for research and development, skill development, and market promotion.
-
-Under this mission, various initiatives have been launched to promote technical textiles including setting up of centers of excellence, supporting startups, and facilitating technology transfer from research institutions to industry.
-
-The Ministry's support for INDUTECH 2025 demonstrates the government's commitment to promoting technical textiles and fostering collaboration between academia and industry in this strategic sector.`
-    },
-    {
-      id: 5,
-      title: "Conference Objectives and Vision",
-      subtitle: "Building Bridges Between Academia and Industry",
-      content: `INDUTECH 2025 aims to create a comprehensive platform for knowledge exchange, networking, and collaboration in the field of industrial textiles. The conference objectives are designed to address current challenges and future opportunities in technical textiles.
-
-Primary objectives include showcasing latest research developments in industrial textiles, facilitating technology transfer from laboratories to commercial applications, promoting sustainable and eco-friendly textile technologies, and creating networking opportunities for researchers, industry professionals, and policymakers.
-
-The conference vision is to establish India as a global hub for technical textiles innovation and manufacturing. We aim to foster international collaborations, support startup ecosystem in technical textiles, and contribute to the national mission of achieving self-reliance in strategic textile materials.
-
-Through expert talks, technical sessions, exhibitions, and networking events, INDUTECH 2025 will serve as a catalyst for advancing the industrial textiles sector and creating new opportunities for growth and innovation.`
-    },
-    {
-      id: 6,
-      title: "International Collaboration and Partnerships",
-      subtitle: "Global Network of Academic and Industry Partners",
-      content: `INDUTECH 2025 has established partnerships with leading international institutions and organizations in the field of technical textiles. These collaborations bring global perspectives and expertise to the conference.
-
-Key international partners include universities from USA, Europe, and Asia-Pacific regions that are leaders in textile research and education. Industry partnerships include major technical textile manufacturers, machinery suppliers, and technology providers from around the world.
-
-The conference features international speakers, joint research presentations, and technology showcases from global partners. These collaborations facilitate knowledge transfer, joint research opportunities, and business partnerships between Indian and international organizations.
-
-Through these international partnerships, INDUTECH 2025 aims to position India in the global technical textiles ecosystem and create opportunities for Indian researchers and companies to access international markets and technologies.`
-    }
-  ];
-
   return (
     <>
       <Helmet>
         <title>About Us - INDUTECH 2025 | International Conference on Industrial Textiles</title>
         <meta 
           name="description" 
-          content="Learn about the organizing institutions and objectives of INDUTECH 2025 - International Conference on Industrial Textiles. Discover our academic partners and conference vision." 
+          content="Learn about the organizing institutions and academic partners behind INDUTECH 2025, including PSG College of Technology and international collaborators." 
         />
-        <meta name="keywords" content="INDUTECH 2025, about us, organizing institutions, conference objectives, technical textiles, academic partners" />
+        <meta name="keywords" content="INDUTECH 2025, about us, organizing institutions, PSG College of Technology, academic partners, technical textiles" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
         
-        <main className="pt-20">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12">
-            <BreadcrumbNavigation />
-            
-            {/* Page Header */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-                About INDUTECH 2025
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Discover the organizing institutions, academic partners, and collaborative vision 
-                that make INDUTECH 2025 a premier platform for industrial textiles innovation 
-                and knowledge exchange.
-              </p>
-            </div>
-
-            {/* Expandable Sections */}
-            <div className="space-y-4">
-              {aboutSections?.map((section, index) => (
-                <ExpandableSection
-                  key={section?.id}
-                  title={section?.title}
-                  subtitle={section?.subtitle}
-                  content={section?.content}
-                  isInitiallyExpanded={index === 0}
-                />
-              ))}
-            </div>
-
-            {/* Call to Action */}
-            <div className="mt-16 text-center bg-card rounded-lg p-8 border border-border">
-              <h2 className="text-2xl font-heading font-semibold text-foreground mb-4">
-                Join the INDUTECH 2025 Community
-              </h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Be part of this prestigious international conference and contribute to the 
-                advancement of industrial textiles technology and innovation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/registration"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-smooth focus-ring"
-                >
-                  Register Now
-                </a>
-                <a
-                  href="/abstract-submission"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-smooth focus-ring"
-                >
-                  Submit Abstract
-                </a>
+        <main className="pt-24">
+          {/* Hero Section */}
+          <section className="pt-32 pb-16 bg-gradient-to-r from-cyan-700 via-cyan-800 to-cyan-900">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+              <div className="text-center">
+                <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
+                  About INDUTECH 2025
+                </h1>
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                  Discover the organizing institutions, academic partners, and collaborative vision 
+                  that make INDUTECH 2025 a premier platform for industrial textiles innovation 
+                  and knowledge exchange.
+                </p>
               </div>
             </div>
+          </section>
+
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+
+            {/* PSG College of Technology */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">PSG College of Technology</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  PSG College of Technology is one of the eminent engineering colleges in the nation, founded by the PSG & Sons' Charities Trust (1926, with 100 years of service). The college comprises 15 engineering and technology departments along with science and humanities departments, all accredited by NBA.
+                </p>
+                <p className="text-foreground leading-relaxed">
+                  The institution has a student strength of 8518, and more than 500 research scholars are currently pursuing Ph.D., MS, or M.Tech degrees.
+                </p>
+              </div>
+            </section>
+
+            {/* Department of Textile Technology */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Department of Textile Technology</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The Department of Textile Technology has earned national recognition, including the prestigious ELICO Mentor Award for Best Industry Linked Engineering Institute (AICTE-CII) in 2015.
+                </p>
+                <p className="text-foreground leading-relaxed mb-6">
+                  With significant funding of ₹45 Crores from the Ministry of Textiles and PSG Management, the department, in collaboration with Automobile Engineering, has established a Centre of Excellence (COE) focused on Industrial and Home Textiles. An additional ₹10 Crores was recently granted by the Ministry of Textiles for R&D, training, and infrastructure development in the area of Technical Textiles.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-foreground mb-4">Programmes Offered:</h3>
+                <ul className="list-disc list-inside text-foreground space-y-2">
+                  <li>B.Tech - Textile Technology (4 Years, Full-time)</li>
+                  <li>M.Tech - Textile Technology (2 Years, Full-time)</li>
+                  <li>Ph.D - Textile Technology (Full-time and Part-time)</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Department of Automobile Engineering */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Department of Automobile Engineering</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The Department of Automobile Engineering plays a vital role in the COE on Industrial and Home Textiles and contributes actively to interdisciplinary research and industry collaboration.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-foreground mb-4">Programmes Offered:</h3>
+                <ul className="list-disc list-inside text-foreground space-y-2">
+                  <li>B.E - Automobile Engineering (4 Years, Full-time)</li>
+                  <li>M.E - Automobile Engineering (2 Years, Full-time)</li>
+                  <li>Ph.D - Automobile Engineering (Full-time and Part-time)</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Centre of Excellence Objectives */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Centre of Excellence (CoE) Objectives</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The Centre houses the facilities to meet the following objectives:
+                </p>
+                
+                <ul className="list-disc list-inside text-foreground space-y-2">
+                  <li>Testing and Evaluation of the Products of Industrial Textiles</li>
+                  <li>Manufacturing and Finishing Machinery for Product Development</li>
+                  <li>Resource Centre with I.T. Infrastructure</li>
+                  <li>Training of Personnel from the Industry</li>
+                  <li>New Product Development & Commercialization</li>
+                  <li>Product Incubation Centre to Promote Innovation and Entrepreneurship</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Institute for Frontier Materials */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Institute for Frontier Materials (IFM), Deakin University, Australia</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The Institute for Frontier Materials (IFM) at Deakin University is a world-leading materials science research institute. It brings together materials scientists and engineers to work alongside physicists, chemists, and computational scientists.
+                </p>
+                <p className="text-foreground leading-relaxed mb-6">
+                  IFM's research addresses major societal challenges through innovations in materials design and performance. The team includes approximately 150 research academics and 150 Ph.D. students.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-foreground mb-4">Main Research Themes:</h3>
+                <ul className="list-disc list-inside text-foreground space-y-2 mb-6">
+                  <li>Re-designing materials for a circular economy</li>
+                  <li>Imparting materials with extraordinary functionality</li>
+                </ul>
+                
+                <p className="text-foreground leading-relaxed mb-6">
+                  The ultimate aim is to develop materials with advanced functionality suitable for a circular economy.
+                </p>
+                
+                <p className="text-foreground leading-relaxed">
+                  <strong>Core research areas include:</strong> advanced alloys, carbon fibres and composites, fibres and textiles, electromaterials, infrastructure materials, and micro/nano-materials.
+                </p>
+              </div>
+            </section>
+
+            {/* Northwest Composites Centre */}
+            <section className="mb-16">
+              <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Northwest Composites Centre, University of Manchester, UK</h2>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The Northwest Composites Centre, housed within the Department of Materials at the University of Manchester, was established in 2006 with £2.1 million in funding from the Northwest Regional Development Agency (NWDA).
+                </p>
+                <p className="text-foreground leading-relaxed mb-6">
+                  It later received an additional £8 million to establish the National Composites Certification and Evaluation Facility (NCCEF) in support of the composites sector.
+                </p>
+                <p className="text-foreground leading-relaxed mb-6">
+                  The centre hosts over 45 Ph.D. students and 10 Post-doctoral RAs, with funding from EPSRC, TSB, BIS, EU, MoD, DSTL, US Air Force, and industry partners.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-foreground mb-4">Research Areas:</h3>
+                <ul className="list-disc list-inside text-foreground space-y-2 mb-6">
+                  <li>2D and 3D weaving and braiding</li>
+                  <li>Robotic fibre placement</li>
+                  <li>Nonwovens and paper</li>
+                  <li>Smart structures</li>
+                  <li>Computational and experimental mechanics of composites</li>
+                </ul>
+                
+                <p className="text-foreground leading-relaxed">
+                  Established in 1824, the University of Manchester is the largest single-site university in the UK, ranked 41st in the world, eighth in Europe, and fifth in the UK in the 2015 Shanghai Jiao Tong World Ranking. A total of 25 Nobel Prize winners have studied or worked there. The university has invested over £750 million in the past decade, with another £1 billion in investment underway by 2022 — the largest such investment among UK universities.
+                </p>
+              </div>
+            </section>
+
           </div>
         </main>
+
+        {/* Footer */}
+        <footer className="bg-card border-t border-border py-8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="text-center">
+              <p className="text-sm text-muted-foreground">
+                © {new Date()?.getFullYear()} INDUTECH 2025. All rights reserved. 
+                Organized by PSG College of Technology in collaboration with international partners.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );

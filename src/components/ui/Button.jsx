@@ -5,7 +5,7 @@ import { cn } from "../../utils/cn";
 import Icon from '../AppIcon';
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
     {
         variants: {
             variant: {
@@ -20,12 +20,12 @@ const buttonVariants = cva(
                 danger: "bg-error text-error-foreground hover:bg-error/90",
             },
             size: {
-                default: "h-10 px-4 py-2",
-                sm: "h-9 rounded-md px-3",
-                lg: "h-11 rounded-md px-8",
-                icon: "h-10 w-10",
-                xs: "h-8 rounded-md px-2 text-xs",
-                xl: "h-12 rounded-md px-10 text-base",
+                default: "h-12 px-6 py-3 text-base sm:h-13 sm:px-7 lg:h-14 lg:px-8 lg:text-lg",
+                sm: "h-10 rounded-md px-4 text-sm sm:h-11 sm:px-5 lg:text-base",
+                lg: "h-14 rounded-md px-10 text-lg sm:h-15 sm:px-12 lg:h-16 lg:px-14 lg:text-xl",
+                icon: "h-12 w-12 sm:h-13 sm:w-13 lg:h-14 lg:w-14",
+                xs: "h-9 rounded-md px-3 text-sm sm:h-10 sm:px-4",
+                xl: "h-16 rounded-md px-12 text-xl sm:h-17 sm:px-14 lg:h-18 lg:px-16 lg:text-2xl",
             },
         },
         defaultVariants: {

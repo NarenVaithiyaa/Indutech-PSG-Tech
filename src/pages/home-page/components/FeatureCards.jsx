@@ -54,18 +54,18 @@ const FeatureCards = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
             Conference Highlights
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Discover the key features that make INDUTECH 2025 the premier destination for industrial textiles professionals and researchers worldwide.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {features?.map((feature) => (
             <Link
               key={feature?.id}
@@ -73,7 +73,7 @@ const FeatureCards = () => {
               className="group bg-white rounded-xl shadow-subtle hover:shadow-elevated transition-smooth card-hover overflow-hidden"
             >
               {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-52 sm:h-56 lg:h-60 overflow-hidden">
                 <Image
                   src={feature?.image}
                   alt={feature?.title}
@@ -82,24 +82,24 @@ const FeatureCards = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 
                 {/* Icon */}
-                <div className={`absolute top-4 right-4 w-12 h-12 rounded-full ${getColorClasses(feature?.color)} flex items-center justify-center shadow-elevated`}>
-                  <Icon name={feature?.icon} size={20} />
+                <div className={`absolute top-4 right-4 w-14 h-14 sm:w-16 sm:h-16 rounded-full ${getColorClasses(feature?.color)} flex items-center justify-center shadow-elevated`}>
+                  <Icon name={feature?.icon} size={24} className="sm:w-7 sm:h-7" />
                 </div>
               </div>
 
               {/* Content Section */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-smooth">
+              <div className="p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-smooth">
                   {feature?.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-6">
                   {feature?.description}
                 </p>
                 
                 {/* Call to Action */}
-                <div className="flex items-center text-primary font-medium text-sm group-hover:translate-x-1 transition-smooth">
+                <div className="flex items-center text-primary font-medium text-lg sm:text-xl group-hover:translate-x-1 transition-smooth">
                   <span>Learn More</span>
-                  <Icon name="ArrowRight" size={16} className="ml-2" />
+                  <Icon name="ArrowRight" size={20} className="ml-3 sm:w-6 sm:h-6" />
                 </div>
               </div>
             </Link>
@@ -107,33 +107,33 @@ const FeatureCards = () => {
         </div>
 
         {/* Additional Info Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-primary/5 rounded-lg p-6 text-center">
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="Calendar" size={24} color="white" />
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+          <div className="bg-primary/5 rounded-lg p-8 lg:p-10 text-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+              <Icon name="Calendar" size={32} color="white" className="sm:w-10 sm:h-10" />
             </div>
-            <h3 className="text-lg font-bold text-foreground mb-2">3 Days Event</h3>
-            <p className="text-muted-foreground text-sm">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">3 Days Event</h3>
+            <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed">
               Comprehensive program spanning three full days of presentations, workshops, and networking.
             </p>
           </div>
 
-          <div className="bg-success/5 rounded-lg p-6 text-center">
-            <div className="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="Globe" size={24} color="white" />
+          <div className="bg-success/5 rounded-lg p-8 lg:p-10 text-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-success rounded-full flex items-center justify-center mx-auto mb-6">
+              <Icon name="Globe" size={32} color="white" className="sm:w-10 sm:h-10" />
             </div>
-            <h3 className="text-lg font-bold text-foreground mb-2">International Reach</h3>
-            <p className="text-muted-foreground text-sm">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">International Reach</h3>
+            <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed">
               Participants from over 25 countries sharing knowledge and fostering global collaboration.
             </p>
           </div>
 
-          <div className="bg-accent/5 rounded-lg p-6 text-center">
-            <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="Award" size={24} color="white" />
+          <div className="bg-accent/5 rounded-lg p-8 lg:p-10 text-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+              <Icon name="Award" size={32} color="white" className="sm:w-10 sm:h-10" />
             </div>
-            <h3 className="text-lg font-bold text-foreground mb-2">Excellence Awards</h3>
-            <p className="text-muted-foreground text-sm">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Excellence Awards</h3>
+            <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed">
               Recognition for outstanding research contributions and innovative solutions in industrial textiles.
             </p>
           </div>

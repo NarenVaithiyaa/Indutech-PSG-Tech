@@ -12,10 +12,10 @@ const CommitteeCard = ({ member }) => {
   };
 
   return (
-    <div className="bg-card rounded-xl p-6 shadow-subtle hover:shadow-elevated transition-smooth card-hover border border-border">
+    <div className="bg-card rounded-xl p-8 lg:p-10 shadow-subtle hover:shadow-elevated transition-smooth card-hover border border-border">
       <div className="flex flex-col items-center text-center">
         {/* Member Photo */}
-        <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-primary/10">
+        <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-6 border-4 border-primary/10">
           <Image
             src={member?.photo}
             alt={`${member?.name} - ${member?.role}`}
@@ -24,38 +24,38 @@ const CommitteeCard = ({ member }) => {
         </div>
 
         {/* Member Information */}
-        <div className="space-y-2 mb-4">
-          <h3 className="text-lg font-heading font-bold text-foreground">
+        <div className="space-y-3 mb-6">
+          <h3 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">
             {member?.name}
           </h3>
-          <p className="text-sm font-medium text-primary">
+          <p className="text-lg sm:text-xl font-medium text-primary">
             {member?.title}
           </p>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground">
             {member?.institution}
           </p>
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent text-lg font-medium">
             {member?.role}
           </div>
         </div>
 
         {/* Contact Information */}
-        <div className="space-y-2 w-full">
+        <div className="space-y-3 w-full">
           {member?.email && (
             <button
               onClick={() => handleEmailClick(member?.email)}
-              className="flex items-center justify-center w-full px-3 py-2 text-sm text-muted-foreground hover:text-primary transition-smooth focus-ring rounded-lg hover:bg-muted/50"
+              className="flex items-center justify-center w-full px-4 py-3 text-lg text-muted-foreground hover:text-primary transition-smooth focus-ring rounded-lg hover:bg-muted/50"
             >
-              <Icon name="Mail" size={16} className="mr-2" />
+              <Icon name="Mail" size={20} className="mr-3" />
               {member?.email}
             </button>
           )}
           {member?.phone && (
             <button
               onClick={() => handlePhoneClick(member?.phone)}
-              className="flex items-center justify-center w-full px-3 py-2 text-sm text-muted-foreground hover:text-primary transition-smooth focus-ring rounded-lg hover:bg-muted/50"
+              className="flex items-center justify-center w-full px-4 py-3 text-lg text-muted-foreground hover:text-primary transition-smooth focus-ring rounded-lg hover:bg-muted/50"
             >
-              <Icon name="Phone" size={16} className="mr-2" />
+              <Icon name="Phone" size={20} className="mr-3" />
               {member?.phone}
             </button>
           )}

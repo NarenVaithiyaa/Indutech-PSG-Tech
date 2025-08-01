@@ -33,9 +33,7 @@ const Registration = () => {
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
-        <div className="pt-24">
-          <RegistrationHeader />
-        </div>
+        <RegistrationHeader />
         
         <main className="pb-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
