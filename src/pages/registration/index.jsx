@@ -33,7 +33,7 @@ const Registration = () => {
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
-        <div className="pt-24">
+        <div className="pt-16 sm:pt-18 md:pt-20 lg:pt-24">
           <RegistrationHeader />
         </div>
         
@@ -150,7 +150,7 @@ const Registration = () => {
             <div className="text-center">
               <p className="text-sm text-muted-foreground">
                 © {new Date()?.getFullYear()} INDUTECH 2025. All rights reserved. 
-                Organized by Department of Textile Technology, IIT Delhi.
+                Organized by Departments of Textile Technology and Automobile Engineering, PSG College of Technology.
               </p>
             </div>
           </div>

@@ -34,19 +34,19 @@ const Sponsorship = () => {
   return (
     <>
       <Helmet>
-        <title>Sponsorship - INDUTECH 2025 | International Conference on Industrial Textiles</title>
+        <title>Sponsorship - INDUTECH 2025 | 6th International Conference on Industrial Textiles</title>
         <meta 
           name="description" 
-          content="Become a sponsor of INDUTECH 2025. Explore sponsorship opportunities and partnership packages for the International Conference on Industrial Textiles." 
+          content="Become a sponsor of INDUTECH 2025. Explore sponsorship opportunities and partnership packages for the 6th International Conference on Industrial Textiles - Products, Applications and Prospects." 
         />
         <meta name="keywords" content="INDUTECH 2025, sponsorship, partnership, corporate sponsor, conference sponsorship, industrial textiles" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
         
-        <main className="pt-24">
+        <main className="pt-16 sm:pt-18 md:pt-20 lg:pt-24">
           {/* Hero Section */}
-          <section className="pt-32 pb-16 bg-gradient-to-r from-cyan-700 via-cyan-800 to-cyan-900">
+          <section className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-16 bg-gradient-to-r from-cyan-700 via-cyan-800 to-cyan-900">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
@@ -199,7 +199,6 @@ const Sponsorship = () => {
                 </p>
               </div>
             </section>
-
           </div>
         </main>
 
@@ -209,7 +208,7 @@ const Sponsorship = () => {
             <div className="text-center">
               <p className="text-sm text-muted-foreground">
                 © {new Date()?.getFullYear()} INDUTECH 2025. All rights reserved. 
-                Organized by Department of Textile Technology, IIT Delhi.
+                Organized by Departments of Textile Technology and Automobile Engineering, PSG College of Technology.
               </p>
             </div>
           </div>
