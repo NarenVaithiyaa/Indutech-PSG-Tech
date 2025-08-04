@@ -94,7 +94,7 @@ const Accommodation = () => {
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
                   Accommodation
                 </h1>
-                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed text-center">
                   Find comfortable and convenient accommodation options for INDUTECH 2025. 
                   We have partnered with various hotels and guest houses to ensure a pleasant stay.
                 </p>

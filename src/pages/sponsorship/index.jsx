@@ -52,7 +52,7 @@ const Sponsorship = () => {
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
                   Sponsorship Opportunities
                 </h1>
-                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed text-center">
                   Partner with INDUTECH 2025 and connect with leading professionals in industrial textiles. 
                   Discover various sponsorship packages tailored to meet your marketing objectives.
                 </p>
@@ -66,10 +66,10 @@ const Sponsorship = () => {
             <section className="mb-12">
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Important Note</h2>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   SPONSORS are requested to register using the link provided only after completing the payment of the respective amount.
                 </p>
-                <p className="text-foreground leading-relaxed mt-3">
+                <p className="text-foreground leading-relaxed mt-3 text-justify">
                   After making the payment, please proceed to fill in the registration form by entering your personal details along with the payment transaction details for verification.
                 </p>
               </div>
@@ -82,10 +82,10 @@ const Sponsorship = () => {
               </div>
               
               <div className="bg-card rounded-lg border border-border p-8 mb-8">
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6 text-justify">
                   The international conference provides an excellent opportunity for companies to gain global visibility by showcasing their products and services to a highly focused audience. It also allows networking with participants from across the world. Sponsors will gain visibility through the conference souvenir, backdrops, documentation, and dockets.
                 </p>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   Sponsors will also have the privilege of product presentation/display during the conference, helping students, researchers, and attendees to visualize state-of-the-art technologies.
                 </p>
               </div>

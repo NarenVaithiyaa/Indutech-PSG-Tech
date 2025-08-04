@@ -44,10 +44,10 @@ const Registration = () => {
             <section className="mb-12">
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Important Note:</h2>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   Participants are requested to register using the link provided only after completing the payment of the respective amount via the payment option given below.
                 </p>
-                <p className="text-foreground leading-relaxed mt-3">
+                <p className="text-foreground leading-relaxed mt-3 text-justify">
                   After making the payment, please proceed to fill in the registration form by entering your personal details along with the payment transaction details for verification.
                 </p>
               </div>
@@ -86,7 +86,7 @@ const Registration = () => {
             {/* Registration Fee Covers Section */}
             <section className="mb-12">
               <div className="bg-card rounded-lg border border-border p-8">
-                <p className="text-foreground leading-relaxed text-center">
+                <p className="text-foreground leading-relaxed text-center text-justify">
                   Registration fee covers admission to all presentations, conference lunch and refreshments. Each participant will receive conference proceedings in CD ROM, a conference souvenir, docket, and certificate.
                 </p>
               </div>

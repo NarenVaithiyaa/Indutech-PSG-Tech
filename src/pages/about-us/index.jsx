@@ -24,7 +24,7 @@ const AboutUs = () => {
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
                   About INDUTECH 2025
                 </h1>
-                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed text-center">
                   Discover the organizing institutions, academic partners, and collaborative vision 
                   that make INDUTECH 2025 a premier platform for industrial textiles innovation 
                   and knowledge exchange.
@@ -39,10 +39,10 @@ const AboutUs = () => {
             <section className="mb-16">
               <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6">PSG College of Technology</h2>
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6 text-justify">
                   PSG College of Technology is one of the eminent engineering colleges in the nation, founded by the PSG & Sons' Charities Trust (1926, with 100 years of service). The college comprises 15 engineering and technology departments along with science and humanities departments, all accredited by NBA.
                 </p>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   The institution has a student strength of 8518, and more than 500 research scholars are currently pursuing Ph.D., MS, or M.Tech degrees.
                 </p>
               </div>
@@ -52,10 +52,10 @@ const AboutUs = () => {
             <section className="mb-16">
               <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6">Department of Textile Technology</h2>
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6 text-justify">
                   The Department of Textile Technology has earned national recognition, including the prestigious ELICO Mentor Award for Best Industry Linked Engineering Institute (AICTE-CII) in 2015.
                 </p>
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6 text-justify">
                   With significant funding of ₹45 Crores from the Ministry of Textiles and PSG Management, the department, in collaboration with Automobile Engineering, has established a Centre of Excellence (COE) focused on Industrial and Home Textiles. An additional ₹10 Crores was recently granted by the Ministry of Textiles for R&D, training, and infrastructure development in the area of Technical Textiles.
                 </p>
                 
@@ -72,7 +72,7 @@ const AboutUs = () => {
             <section className="mb-16">
               <div className="bg-card rounded-lg border border-border p-8 lg:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6">Department of Automobile Engineering</h2>
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6 text-justify">
                   The Department of Automobile Engineering plays a vital role in the COE on Industrial and Home Textiles and contributes actively to interdisciplinary research and industry collaboration.
                 </p>
                 

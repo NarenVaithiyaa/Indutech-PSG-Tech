@@ -25,7 +25,7 @@ const Committee = () => {
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
                   Conference Committee
                 </h1>
-                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed text-center">
                   Meet the distinguished academic and industry professionals organizing INDUTECH 2025. 
                   Our committee brings together expertise from PSG College of Technology 
                   to deliver a world-class conference experience.

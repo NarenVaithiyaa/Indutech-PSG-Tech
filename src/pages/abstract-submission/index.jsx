@@ -42,7 +42,7 @@ const AbstractSubmission = () => {
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Abstract Submission
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed text-center">
               Submit your research abstracts for INDUTECH 2025 and contribute to advancing 
               industrial textile technologies.
             </p>
@@ -71,7 +71,7 @@ const AbstractSubmission = () => {
               </div>
               
               <div className="flex flex-col items-center gap-3">
-                <p className="text-lg text-foreground font-medium">Click here to download abstract:</p>
+                <p className="text-lg text-foreground font-medium">Click here to download abstract template:</p>
                 <Button 
                   variant="default" 
                   size="lg" 
