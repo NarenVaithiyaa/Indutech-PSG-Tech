@@ -44,7 +44,7 @@ const HomePage = () => {
         <HeroSection />
         
         {/* Organizers Section */}
-        <section className="py-16 bg-white">
+        <section id="organizers" className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">Organized by</h2>
@@ -95,33 +95,37 @@ const HomePage = () => {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-items-center">
-              <div className="flex items-center justify-center h-40">
+              <div className="flex flex-col items-center justify-center h-40">
                 <img 
                   src="/assets/images/psgtech.png" 
                   alt="PSG College of Technology" 
                   className="max-h-full max-w-full object-contain"
                 />
+                <span className="mt-4 text-base font-semibold text-gray-800 text-center">PSG College of Technology</span>
               </div>
-              <div className="flex items-center justify-center h-40">
+              <div className="flex flex-col items-center justify-center h-40">
                 <img 
                   src="/assets/images/ministry.png" 
                   alt="Ministry of Textiles" 
                   className="max-h-full max-w-full object-contain"
                 />
+                <span className="mt-4 text-base font-semibold text-gray-800 text-center">Ministry of Textiles</span>
               </div>
-              <div className="flex items-center justify-center h-40">
+              <div className="flex flex-col items-center justify-center h-40">
                 <img 
                   src="/assets/images/deakin-logo-transparent.png" 
                   alt="Deakin University" 
                   className="max-h-full max-w-full object-contain"
                 />
+                <span className="mt-4 text-base font-semibold text-gray-800 text-center">Deakin University</span>
               </div>
-              <div className="flex items-center justify-center h-40">
+              <div className="flex flex-col items-center justify-center h-40">
                 <img 
                   src="/assets/images/uni_man.jpg" 
                   alt="University of Manchester" 
                   className="max-h-full max-w-full object-contain"
                 />
+                <span className="mt-4 text-base font-semibold text-gray-800 text-center">University of Manchester</span>
               </div>
             </div>
           </div>

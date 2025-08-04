@@ -81,7 +81,7 @@ const ConferenceTheme = () => {
             Conference Theme: Innovation &amp; Sustainability
           </h2>
           <div className="max-w-5xl mx-auto">
-            <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-10 leading-relaxed">
+            <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-10 leading-relaxed text-justify" style={{ textAlign: 'justify', textJustify: 'inter-word' }}>
               INDUTECH 2025 focuses on the convergence of innovation and sustainability in industrial textiles. 
               Our theme explores how cutting-edge technologies can drive sustainable practices while maintaining 
               performance excellence in textile manufacturing and applications.

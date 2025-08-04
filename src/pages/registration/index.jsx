@@ -64,17 +64,17 @@ const Registration = () => {
                   <table className="w-full border-4 border-gray-800">
                     <thead>
                       <tr className="border-b-4 border-gray-800">
-                        <th className="text-left py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Registration Category</th>
-                        <th className="text-left py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Paid before Sept. 19, 2025</th>
-                        <th className="text-left py-4 px-6 font-bold text-white" style={{backgroundColor: '#60a5fa', color: 'white'}}>Paid after Sept. 19, 2025</th>
+                        <th className="text-center py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Registration Category</th>
+                        <th className="text-center py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Paid before Sept. 19, 2025</th>
+                        <th className="text-center py-4 px-6 font-bold text-white" style={{backgroundColor: '#60a5fa', color: 'white'}}>Paid after Sept. 19, 2025</th>
                       </tr>
                     </thead>
                     <tbody>
                       {registrationFees.map((item, index) => (
                         <tr key={index} className="border-b-4 border-gray-800 last:border-b-4">
-                          <td className="py-4 px-6 text-foreground font-medium border-r-4 border-gray-800">{item.category}</td>
-                          <td className="py-4 px-6 text-black font-bold border-r-4 border-gray-800" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.beforeSept19}</td>
-                          <td className="py-4 px-6 text-black font-bold" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.afterSept19}</td>
+                          <td className="py-4 px-6 text-foreground font-medium border-r-4 border-gray-800 text-center">{item.category}</td>
+                          <td className="py-4 px-6 text-black font-bold border-r-4 border-gray-800 text-center" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.beforeSept19}</td>
+                          <td className="py-4 px-6 text-black font-bold text-center" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.afterSept19}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -103,15 +103,15 @@ const Registration = () => {
                   <table className="w-full border-4 border-gray-800">
                     <thead>
                       <tr className="border-b-4 border-gray-800">
-                        <th className="text-left py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Payment Details</th>
-                        <th className="text-left py-4 px-6 font-bold text-white" style={{backgroundColor: '#60a5fa', color: 'white'}}>Information</th>
+                        <th className="text-center py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Payment Details</th>
+                        <th className="text-center py-4 px-6 font-bold text-white" style={{backgroundColor: '#60a5fa', color: 'white'}}>Information</th>
                       </tr>
                     </thead>
                     <tbody>
                       {paymentDetails.map((item, index) => (
                         <tr key={index} className="border-b-4 border-gray-800 last:border-b-4">
-                          <td className="py-4 px-6 text-foreground font-medium border-r-4 border-gray-800">{item.field}</td>
-                          <td className="py-4 px-6 text-black font-bold" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.value}</td>
+                          <td className="py-4 px-6 text-foreground font-medium border-r-4 border-gray-800 text-center">{item.field}</td>
+                          <td className="py-4 px-3 text-black font-bold text-center" style={{backgroundColor: '#fef08a', color: 'black', maxWidth: '180px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>{item.value}</td>
                         </tr>
                       ))}
                     </tbody>
