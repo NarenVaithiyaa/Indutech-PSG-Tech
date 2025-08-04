@@ -1,7 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Image from '../../../components/AppImage';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
+  const scrollToSection = (sectionId) => {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      const headerHeight = 80; // Account for fixed header
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-18 md:pt-20 lg:pt-24">
       {/* Background Image */}
@@ -41,18 +55,18 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center">
-          <a
-            href="#registration"
+          <button
             className="bg-primary hover:bg-primary/90 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth shadow-elevated"
+            onClick={() => navigate('/registration')}
           >
             Register Now
-          </a>
-          <a
-            href="#about"
+          </button>
+          <button
             className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth border border-white/30 backdrop-blur-sm"
+            onClick={() => scrollToSection('#organizers')}
           >
             Learn More
-          </a>
+          </button>
         </div>
       </div>
     </section>

@@ -25,8 +25,8 @@ const AbstractSubmission = () => {
   ];
 
   const importantDates = [
-    { event: "Abstract submission", date: "20-08-2025" },
-    { event: "Notification of the Acceptance of Abstract", date: "01-09-2025" },
+    { event: "Abstract submission", date: "30-09-2025" },
+    { event: "Notification of the Acceptance of Abstract", date: "01-10-2025" },
     { event: "Submission of Full Paper & Registration Fee", date: "10-10-2025" }
   ];
 
@@ -160,20 +160,20 @@ const AbstractSubmission = () => {
             <h2 className="text-3xl font-bold text-foreground mb-4">Important Dates</h2>
           </div>
           
-          <div className="bg-card rounded-lg border border-border p-8">
+          <div className="bg-card rounded-lg border border-border p-8 max-w-3xl mx-auto">
             <div className="overflow-x-auto">
               <table className="w-full border-4 border-gray-800">
                 <thead>
                   <tr className="border-b-4 border-gray-800">
-                    <th className="text-left py-4 px-6 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white'}}>Event</th>
-                    <th className="text-left py-4 px-6 font-bold text-white" style={{backgroundColor: '#60a5fa', color: 'white'}}>Date</th>
+                    <th className="text-center py-4 px-14 font-bold text-white border-r-4 border-gray-800" style={{backgroundColor: '#60a5fa', color: 'white', minWidth: '220px'}}>Event</th>
+                    <th className="text-center py-4 px-16 font-bold text-white whitespace-nowrap" style={{backgroundColor: '#60a5fa', color: 'white', minWidth: '220px'}}>Date</th>
                   </tr>
                 </thead>
                 <tbody>
                   {importantDates.map((item, index) => (
                     <tr key={index} className="border-b-4 border-gray-800 last:border-b-4">
-                      <td className="py-4 px-6 text-foreground font-medium border-r-4 border-gray-800">{item.event}</td>
-                      <td className="py-4 px-6 text-black font-bold" style={{backgroundColor: '#fef08a', color: 'black'}}>{item.date}</td>
+                      <td className="py-4 px-14 text-foreground font-medium border-r-4 border-gray-800 whitespace-nowrap" style={{minWidth: '220px'}}>{item.event}</td>
+                      <td className="py-4 px-16 text-black font-bold whitespace-nowrap" style={{backgroundColor: '#fef08a', color: 'black', minWidth: '220px'}}>{item.date}</td>
                     </tr>
                   ))}
                 </tbody>
