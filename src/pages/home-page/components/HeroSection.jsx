@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Image from '../../../components/AppImage';
 
 const HeroSection = () => {
@@ -41,18 +42,18 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center">
-          <a
-            href="#registration"
-            className="bg-primary hover:bg-primary/90 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth shadow-elevated"
+          <Link
+            to="/registration"
+            className="bg-primary hover:bg-primary/90 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth shadow-elevated text-center inline-block"
           >
             Register Now
-          </a>
-          <a
-            href="#about"
-            className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth border border-white/30 backdrop-blur-sm"
+          </Link>
+          <Link
+            to="/about-us"
+            className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth border border-white/30 backdrop-blur-sm text-center inline-block"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
