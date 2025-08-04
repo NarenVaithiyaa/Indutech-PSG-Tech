@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-=======
 import { useNavigate } from 'react-router-dom';
->>>>>>> b093b2fdfa8bfc9e132204ab3e400932a4ec3cb1
 import Image from '../../../components/AppImage';
 
 const HeroSection = () => {
@@ -12,7 +8,7 @@ const HeroSection = () => {
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      const headerHeight = 80; // Account for fixed header
+      const headerHeight = 100; // Account for responsive fixed header
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
@@ -59,20 +55,6 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center">
-<<<<<<< HEAD
-          <Link
-            to="/registration"
-            className="bg-primary hover:bg-primary/90 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth shadow-elevated text-center inline-block"
-          >
-            Register Now
-          </Link>
-          <Link
-            to="/about-us"
-            className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth border border-white/30 backdrop-blur-sm text-center inline-block"
-          >
-            Learn More
-          </Link>
-=======
           <button
             className="bg-primary hover:bg-primary/90 text-white px-6 py-3 sm:px-7 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl transition-smooth shadow-elevated"
             onClick={() => navigate('/registration')}
@@ -85,7 +67,6 @@ const HeroSection = () => {
           >
             Learn More
           </button>
->>>>>>> b093b2fdfa8bfc9e132204ab3e400932a4ec3cb1
         </div>
       </div>
     </section>
