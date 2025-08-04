@@ -8,7 +8,7 @@ const HeroSection = () => {
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      const headerHeight = 80; // Account for fixed header
+      const headerHeight = 100; // Account for responsive fixed header
       const elementPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: elementPosition,
