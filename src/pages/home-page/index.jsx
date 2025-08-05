@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import TextileIndustriesCarousel from './components/TextileIndustriesCarousel';
 import Header from '../../components/ui/Header';
 import HeroSection from './components/HeroSection';
 
@@ -48,6 +49,13 @@ const HomePage = () => {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">Organized by</h2>
+              <div className="flex flex-col items-center justify-center mb-8">
+                <img 
+                  src="/assets/images/psgtech.png" 
+                  alt="PSG College of Technology" 
+                  className="max-h-40 max-w-xs object-contain"
+                />
+              </div>
               <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-8 rounded-lg border border-cyan-200">
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">
                   DEPARTMENTS OF TEXTILE TECHNOLOGY AND AUTOMOBILE ENGINEERING
@@ -55,79 +63,74 @@ const HomePage = () => {
                 <h4 className="text-lg lg:text-xl font-semibold text-cyan-700 mb-2">
                   PSG COLLEGE OF TECHNOLOGY
                 </h4>
-                <p className="text-gray-600 text-lg">COIMBATORE, INDIA</p>
+                <p className="text-gray-600 text-lg text-center">COIMBATORE, INDIA</p>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Collaboration Section */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">In Collaboration With</h2>
+              {/* Partner Logos Section (moved here) */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center mb-12">
+                <div className="flex flex-col items-center justify-center h-40">
+                  <img 
+                    src="/assets/images/ministry.png" 
+                    alt="Ministry of Textiles" 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                  <span className="mt-4 text-base font-semibold text-gray-800 text-center">Ministry of Textiles</span>
+                </div>
+                <div className="flex flex-col items-center justify-center h-40">
+                  <img 
+                    src="/assets/images/deakin-logo-transparent.png" 
+                    alt="Deakin University" 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                  <span className="mt-4 text-base font-semibold text-gray-800 text-center">Deakin University</span>
+                </div>
+                <div className="flex flex-col items-center justify-center h-40">
+                  <img 
+                    src="/assets/images/uni_man.jpg" 
+                    alt="University of Manchester" 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                  <span className="mt-4 text-base font-semibold text-gray-800 text-center">University of Manchester</span>
+                </div>
+              </div>
+              {/* Collaboration Cards Section */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Ministry of Textiles */}
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 text-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">OFFICE OF THE TEXTILE COMMISSIONER</h3>
-                  <p className="text-cyan-700 font-semibold">MINISTRY OF TEXTILES</p>
-                  <p className="text-gray-600">GOVERNMENT OF INDIA</p>
+                  <p className="text-cyan-700 font-semibold text-center">MINISTRY OF TEXTILES</p>
+                  <p className="text-gray-600 text-center">GOVERNMENT OF INDIA</p>
                 </div>
 
                 {/* Deakin University */}
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 text-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">INSTITUTE FOR FRONTIER MATERIALS (IFM)</h3>
-                  <p className="text-cyan-700 font-semibold">DEAKIN UNIVERSITY, AUSTRALIA</p>
+                  <p className="text-cyan-700 font-semibold text-center">DEAKIN UNIVERSITY, AUSTRALIA</p>
                 </div>
 
                 {/* University of Manchester */}
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 text-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">NORTHWEST COMPOSITES CENTRE</h3>
-                  <p className="text-cyan-700 font-semibold">DEPARTMENT OF MATERIALS,</p>
-                  <p className="text-gray-600">UNIVERSITY OF MANCHESTER</p>
+                  <p className="text-cyan-700 font-semibold text-center">DEPARTMENT OF MATERIALS,</p>
+                  <p className="text-gray-600 text-center">UNIVERSITY OF MANCHESTER</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Partner Logos Section */}
-        <section className="py-16 bg-white">
+        {/* Textile Industries Carousel Section */}
+        <section className="bg-muted/30">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-items-center">
-              <div className="flex flex-col items-center justify-center h-40">
-                <img 
-                  src="/assets/images/psgtech.png" 
-                  alt="PSG College of Technology" 
-                  className="max-h-full max-w-full object-contain"
-                />
-                <span className="mt-4 text-base font-semibold text-gray-800 text-center">PSG College of Technology</span>
-              </div>
-              <div className="flex flex-col items-center justify-center h-40">
-                <img 
-                  src="/assets/images/ministry.png" 
-                  alt="Ministry of Textiles" 
-                  className="max-h-full max-w-full object-contain"
-                />
-                <span className="mt-4 text-base font-semibold text-gray-800 text-center">Ministry of Textiles</span>
-              </div>
-              <div className="flex flex-col items-center justify-center h-40">
-                <img 
-                  src="/assets/images/deakin-logo-transparent.png" 
-                  alt="Deakin University" 
-                  className="max-h-full max-w-full object-contain"
-                />
-                <span className="mt-4 text-base font-semibold text-gray-800 text-center">Deakin University</span>
-              </div>
-              <div className="flex flex-col items-center justify-center h-40">
-                <img 
-                  src="/assets/images/uni_man.jpg" 
-                  alt="University of Manchester" 
-                  className="max-h-full max-w-full object-contain"
-                />
-                <span className="mt-4 text-base font-semibold text-gray-800 text-center">University of Manchester</span>
-              </div>
-            </div>
+            <TextileIndustriesCarousel />
           </div>
         </section>
 

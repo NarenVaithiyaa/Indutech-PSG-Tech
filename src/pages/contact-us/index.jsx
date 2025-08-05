@@ -25,7 +25,7 @@ const ContactUs = () => {
                 <h1 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
                   Contact Us
                 </h1>
-                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg text-cyan-100 max-w-3xl mx-auto leading-relaxed text-center">
                   Get comprehensive support for INDUTECH 2025. Our dedicated team is here to assist you 
                   with registration, technical questions, sponsorship opportunities, and conference logistics.
                 </p>
